@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch() API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <form id="buscar">
+            <img src="./assets/images/maps-and-flags.png" alt="icone localização" id="localizacao">
+            <input type="search" name="nome-cidade" id="nome-cidade" placeholder="Buscar cidade">
+            <button type="submit">
+                <img src="./assets/images/search.png" alt="icone lupa" id="lupa">
+            </button>
+        </form>
+
+        <div id="clima" class="show">
+            <h1 id="titulo">São Paulo, SP</h1>
+            <div id="info">
+                <div id="temp">
+                    <img id="temp-value" src="" alt="">
+                    <div><!-- Informações do tempo -->
+                        <p id="temp-value">
+                        32 <sup>c°</sup> </p>
+                        <p id="temp-descricao">Ensolarado</p>
+                        
+                    </div>
+                </div>
+                <div id="outras-info">
+                    <div class="info">
+                        <img id='icon-temp-max' src="./assets/images/temperature.png" alt="icone temperatura maxima">
+                        <div>
+                            <h2>Temp. max</h2>
+
+                            <p id="temp-max">32 <sup>c°</sup></p>
+                            
+                        </div>
+
+                    </div>
+                    <div class="info">
+                        <img id='icon-temp-min' src="./assets/images/temperature (1).png" alt="icone temperatura minima">
+
+                        <div>
+                            <h2>Temp. min</h2>
+
+                            <p id="temp-min">22 <sup>c°</sup></p>
+                            
+                        </div>
+
+                    </div>
+                    <div class="info">
+                        <img id='icon-humidade' src="./assets/images/drop-silhouette.png" alt="icone gota">
+                        <div>
+                            <h2>Humidade</h2>
+
+                            <p id="humidade"> 50%</p>
+                            
+                        </div>
+
+                    </div>
+                    <div class="info">
+                        <img id='icon-vento' src="./assets/images/wind.png" alt="icone vento">
+                        <div>
+                            <h2>Vento</h2>
+
+                            <p id="vento"> 50 km/h</p>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="alert">
+
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
